@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: macOS-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: CocoaPod Install
+        run: pod install
+        
+      # Run xcode
+      - name: Force xcode 11 
+        run: sudo xcode-select -switch /Applications/Xcode_11.1.app
+      
+      # setup ios device
+      - name: iOS build setup
+        run: xcodebuild build-for-testing -scheme your-scheme-test -workspace your_project.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
+      
+      # Run test
+      - name: testing ... iPhone 11 Pro Max
+        run: xcodebuild test-without-building -scheme your-scheme-test -workspace your_project.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1'
