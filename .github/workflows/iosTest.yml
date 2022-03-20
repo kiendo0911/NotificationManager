@@ -31,7 +31,7 @@ jobs:
         
       # Run xcode
       - name: Force xcode
-        run: sudo xcode-select -switch /Applications/Xcode-beta.app
+        run: sudo xcode-select -switch /Applications/Xcode_11.3.app
       
       # setup ios device
       - name: iOS build setup
