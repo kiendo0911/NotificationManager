@@ -39,8 +39,8 @@ jobs:
       
       # Run UnitTests
       - name: Run UnitTests
-        run: xcodebuild test-without-building -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
+        run: xcodebuild test-without-building -scheme NotificationManager -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
       
       # Run UnitTests
-      - name: Run UnitTests
-        run: xcodebuild test-without-building -scheme NotificationManagerUITests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
+#       - name: Run UnitTests
+#         run: xcodebuild test-without-building -scheme NotificationManagerUITests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
