@@ -16,7 +16,6 @@
 		0406BB9C27E4E4E800CE7CEA /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406BB9B27E4E4E800CE7CEA /* Date+.swift */; };
 		040AC55B27E428E900FC9D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC55A27E428E900FC9D78 /* AppDelegate.swift */; };
 		040AC55D27E428E900FC9D78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC55C27E428E900FC9D78 /* SceneDelegate.swift */; };
-		040AC56227E428E900FC9D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC56027E428E900FC9D78 /* Main.storyboard */; };
 		040AC56527E428E900FC9D78 /* NotificationManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040AC56327E428E900FC9D78 /* NotificationManager.xcdatamodeld */; };
 		040AC56727E428EB00FC9D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040AC56627E428EB00FC9D78 /* Assets.xcassets */; };
 		040AC56A27E428EB00FC9D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC56827E428EB00FC9D78 /* LaunchScreen.storyboard */; };
@@ -68,7 +67,6 @@
 		040AC55727E428E900FC9D78 /* NotificationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040AC55A27E428E900FC9D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040AC55C27E428E900FC9D78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		040AC56127E428E900FC9D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040AC56427E428E900FC9D78 /* NotificationManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotificationManager.xcdatamodel; sourceTree = "<group>"; };
 		040AC56627E428EB00FC9D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040AC56927E428EB00FC9D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				040AC58D27E42AB500FC9D78 /* App */,
 				040AC55A27E428E900FC9D78 /* AppDelegate.swift */,
 				040AC55C27E428E900FC9D78 /* SceneDelegate.swift */,
-				040AC56027E428E900FC9D78 /* Main.storyboard */,
 				040AC56627E428EB00FC9D78 /* Assets.xcassets */,
 				040AC56827E428EB00FC9D78 /* LaunchScreen.storyboard */,
 				040AC56B27E428EB00FC9D78 /* Info.plist */,
@@ -426,7 +423,6 @@
 				0406BB8C27E4CF5000CE7CEA /* NotificationCell.xib in Resources */,
 				040AC59527E4306800FC9D78 /* NotificationsViewController.xib in Resources */,
 				040AC56727E428EB00FC9D78 /* Assets.xcassets in Resources */,
-				040AC56227E428E900FC9D78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,14 +605,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		040AC56027E428E900FC9D78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040AC56127E428E900FC9D78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		040AC56827E428EB00FC9D78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -755,7 +743,6 @@
 				INFOPLIST_FILE = NotificationManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -785,7 +772,6 @@
 				INFOPLIST_FILE = NotificationManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -812,7 +798,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VN7VA28M9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kiendo.notification.NotificationManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -833,7 +819,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VN7VA28M9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kiendo.notification.NotificationManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -853,6 +839,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VN7VA28M9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kiendo.notification.NotificationManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -872,6 +859,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VN7VA28M9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kiendo.notification.NotificationManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
