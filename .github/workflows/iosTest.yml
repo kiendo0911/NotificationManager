@@ -35,8 +35,8 @@ jobs:
       
       # setup ios device
       - name: iOS build setup
-        run: xcodebuild build-for-testing -scheme your-scheme-test -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
+        run: xcodebuild build-for-testing -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
       
       # Run test
       - name: testing ... iPhone 11 Pro Max
-        run: xcodebuild test-without-building -scheme your-scheme-test -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1'
+        run: xcodebuild test-without-building -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1'
