@@ -33,14 +33,11 @@ jobs:
       - name: Force xcode
         run: sudo xcode-select -switch /Applications/Xcode_13.2.1.app
       
-      # setup ios device
+      # Build iOS project
       - name: iOS build tesing
         run: xcodebuild build-for-testing -scheme NotificationManager -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
       
-      # Run UnitTests
-      - name: Run UnitTests
+      # Run UnitTests and UITests
+      - name: Build UnitTests and UITests
         run: xcodebuild test-without-building -scheme NotificationManager -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
-      
-      # Run UnitTests
-#       - name: Run UnitTests
-#         run: xcodebuild test-without-building -scheme NotificationManagerUITests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
+    
