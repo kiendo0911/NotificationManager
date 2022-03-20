@@ -34,9 +34,9 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode_13.2.1.app
       
       # setup ios device
-      - name: iOS build setup
-        run: xcodebuild build-for-testing -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
+      - name: iOS build tesing
+        run: xcodebuild build-for-testing -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
       
       # Run test
       - name: testing ... iPhone 11 Pro Max
-        run: xcodebuild test-without-building -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.1'
+        run: xcodebuild test-without-building -scheme NotificationManagerTests -workspace NotificationManager.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.2'
