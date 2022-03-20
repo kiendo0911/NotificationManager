@@ -30,8 +30,8 @@ jobs:
         run: pod install
         
       # Run xcode
-      - name: Force xcode 11 
-        run: sudo xcode-select -switch /Applications/Xcode_11.1.app
+      - name: Force xcode
+        run: sudo xcode-select -switch /Applications/Xcode-beta.app
       
       # setup ios device
       - name: iOS build setup
